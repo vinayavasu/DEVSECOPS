@@ -1,0 +1,31 @@
+This page is focused on an open source SAST tool which is Horusec. 
+The github page is as follows:
+https://github.com/ZupIT/horusec
+
+What is Horusec?
+Horusec is an open-source static application security testing (SAST) tool developed originally by Zup IT Innovation.
+It helps developers and security teams identify vulnerabilities in source code during the development lifecycle.
+It’s commonly used in DevSecOps pipelines for early detection of security flaws.
+
+Key Features
+Multi-language support → works with Java, Go, Python, JavaScript, C#, Ruby, Kotlin, PHP, Dart, etc.
+Command-line interface (CLI) → you can run scans locally or integrate into CI/CD pipelines.
+Dockerized → easy to run without installing dependencies.
+Custom rules → you can configure checks or extend rules to match your org’s security policies.
+Reports → generates outputs in JSON, HTML, or SonarQube-compatible formats.
+Integration → works with GitHub Actions, GitLab CI, Jenkins, Azure DevOps, etc.
+
+How it Fits in DevSecOps
+Developers commit code.
+Horusec runs automatically in the pipeline (or manually via CLI).
+It scans the source code for vulnerabilities (like SQL injection, hardcoded credentials, XSS, etc.).
+Reports issues early, so they can be fixed before code reaches production.
+
+Example CLI Usage
+If Docker is installed, you can run:
+docker run -v /path/to/your/project:/src horuszup/horusec-cli:latest horusec start -p /src
+Or with the installed CLI:
+horusec start -p 
+
+Why It’s Useful and why is this tool used : 
+This is an open source tool and it helps in shift security left- which means it finds bugs earlier in SDLC.It also complements other tools like Synk and Sonarcube in DevsecOPS pipleine

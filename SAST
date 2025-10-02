@@ -29,3 +29,7 @@ horusec start -p
 
 Why It’s Useful and why is this tool used : 
 This is an open source tool and it helps in shift security left- which means it finds bugs earlier in SDLC.It also complements other tools like Synk and Sonarcube in DevsecOPS pipleine
+
+So this tool has been used in place with OWASP juiceshop
+OWASP juice shop is aninsecure web application maintained by the OWASP Foundation.It’s written in Node.js, Express, and Angular. 
+Purpose: To serve as a training ground for web application security. It’s often called “the most insecure web application in the world.”
